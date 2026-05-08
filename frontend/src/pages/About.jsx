@@ -22,7 +22,7 @@ export default function About() {
         <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=70" alt="About" className="absolute inset-0 w-full h-full object-cover opacity-30" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center">
           <p className="text-yellow-500 text-xs font-semibold tracking-[3px] uppercase mb-3">Who We Are</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white">About Us</h1>
+          <h1 className=" text-4xl md:text-5xl font-bold text-white">About Us</h1>
           <div className="flex items-center gap-2 mt-3 text-gray-400 text-sm">
             <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
             <span>›</span>
@@ -36,7 +36,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-14 items-center">
           <div>
             <p className="text-yellow-600 text-xs font-semibold tracking-[3px] uppercase mb-2">Our Story</p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-3">Who We Are</h2>
+            <h2 className=" text-3xl md:text-4xl font-bold text-gray-900 mb-3">Who We Are</h2>
             <div className="w-12 h-0.5 bg-yellow-600 mb-6" />
             <p className="text-gray-600 leading-relaxed mb-4">
               We Goldkraft Enterprises are Environmental friendly Pigeon Control Services and Solutions providers. Suppliers and Service providers of various Bird Control Products & Specialists in Industrial & Commercial Pigeon Control.
@@ -59,7 +59,7 @@ export default function About() {
           <div className="relative">
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80" alt="Who We Are" className="w-full h-[450px] object-cover shadow-lg" />
             <div className="absolute -bottom-6 -left-6 bg-yellow-600 text-white p-6 shadow-xl">
-              <div className="font-serif text-4xl font-bold">8+</div>
+              <div className=" text-4xl font-bold">8+</div>
               <div className="text-sm font-medium mt-1">Years of Excellence</div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function About() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 text-center mb-14">
           <p className="text-yellow-600 text-xs font-semibold tracking-[3px] uppercase mb-2">Our Purpose</p>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission</h2>
+          <h2 className=" text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission</h2>
           <div className="w-12 h-0.5 bg-yellow-600 mx-auto mb-6" />
           <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
             At Goldkraft, our passion is to save our customers' time at every step — procurement, production, Service and Delivery. That includes the highest quality at the fastest speed. For that, we are dedicated to high work quality, customer satisfaction, and supply security.
@@ -80,7 +80,7 @@ export default function About() {
           {values.map((v, i) => (
             <div key={i} className="bg-white p-8 border border-gray-100 hover:border-yellow-300 hover:shadow-lg transition-all duration-300 group">
               <div className="text-4xl mb-4">{v.icon}</div>
-              <h3 className="font-serif text-xl font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{v.title}</h3>
+              <h3 className=" text-xl font-bold text-gray-900 mb-3 group-hover:text-yellow-700 transition-colors">{v.title}</h3>
               <div className="w-8 h-0.5 bg-yellow-600 mb-4" />
               <p className="text-gray-600 text-sm leading-relaxed">{v.desc}</p>
             </div>
@@ -93,7 +93,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-14">
             <p className="text-yellow-600 text-xs font-semibold tracking-[3px] uppercase mb-2">Our Work In Action</p>
-            <h2 className="font-serif text-3xl font-bold text-gray-900">Installation Gallery</h2>
+            <h2 className=" text-3xl font-bold text-gray-900">Installation Gallery</h2>
             <div className="w-12 h-0.5 bg-yellow-600 mx-auto mt-3" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -104,7 +104,7 @@ export default function About() {
               'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=400&q=70',
               'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=70',
               'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&q=70',
-              'https://images.unsplash.com/photo-1581093458791-9e88c0647d87?w=400&q=70',
+              'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=70',
               'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=400&q=70',
             ].map((img, i) => (
               <div key={i} className="overflow-hidden group">
@@ -118,7 +118,7 @@ export default function About() {
       {/* CTA */}
       <section className="py-16 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl font-bold text-white mb-4">Ready to Protect Your Property?</h2>
+          <h2 className=" text-3xl font-bold text-white mb-4">Ready to Protect Your Property?</h2>
           <p className="text-gray-400 mb-8">Get a free site inspection and customized solution proposal from our experts.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link to="/contact" className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-8 py-3.5 uppercase text-sm tracking-wider transition-all duration-300 inline-flex items-center gap-2">

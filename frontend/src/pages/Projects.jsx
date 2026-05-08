@@ -27,7 +27,7 @@ export default function Projects() {
         <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1400&q=70" alt="Projects" className="absolute inset-0 w-full h-full object-cover opacity-25" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center">
           <p className="text-yellow-500 text-xs font-semibold tracking-[3px] uppercase mb-3">Our Portfolio</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white">Featured Projects</h1>
+          <h1 className=" text-4xl md:text-5xl font-bold text-white">Featured Projects</h1>
           <div className="flex items-center gap-2 mt-3 text-gray-400 text-sm">
             <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
             <span>›</span>
@@ -41,7 +41,7 @@ export default function Projects() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[['500+','Projects Completed'],['8+','Years Experience'],['50+','Corporate Clients'],['100%','Client Satisfaction']].map(([n,l],i) => (
             <div key={i}>
-              <div className="font-serif text-4xl font-bold text-white">{n}</div>
+              <div className=" text-4xl font-bold text-white">{n}</div>
               <div className="text-yellow-100 text-sm mt-1">{l}</div>
             </div>
           ))}
@@ -73,7 +73,7 @@ export default function Projects() {
                 </div>
                 <div className="p-5">
                   <div className="text-yellow-600 text-xs font-semibold uppercase tracking-wider mb-1">{p.type}</div>
-                  <h3 className="font-serif text-lg font-bold text-gray-900 mb-2">{p.title}</h3>
+                  <h3 className=" text-lg font-bold text-gray-900 mb-2">{p.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed mb-4">{p.desc}</p>
                   <Link to="/contact" className="text-yellow-600 text-xs font-semibold uppercase tracking-wider flex items-center gap-1 hover:gap-2 transition-all">
                     View Details <ArrowRight size={12}/>
@@ -88,7 +88,7 @@ export default function Projects() {
       {/* Clients */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="font-serif text-2xl font-bold text-gray-900 text-center mb-3">Partial Client List</h3>
+          <h3 className=" text-2xl font-bold text-gray-900 text-center mb-3">Partial Client List</h3>
           <div className="w-12 h-0.5 bg-yellow-600 mx-auto mb-10" />
           <div className="flex flex-wrap justify-center gap-8 items-center">
             {['HAL','Srishaila Constructions','Prestige','Phoenix MarketCity','TAJ Hotels','Columbia Asia','Brigade','Mantri'].map(c => (
@@ -103,7 +103,7 @@ export default function Projects() {
       {/* CTA */}
       <section className="py-16 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl font-bold text-white mb-4">Have a Bird Problem to Solve?</h2>
+          <h2 className=" text-3xl font-bold text-white mb-4">Have a Bird Problem to Solve?</h2>
           <p className="text-gray-400 mb-8">Let's add your property to our success stories.</p>
           <Link to="/contact" className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-8 py-3.5 uppercase text-sm tracking-wider transition-all duration-300 inline-flex items-center gap-2">
             Get Free Assessment <ArrowRight size={15}/>

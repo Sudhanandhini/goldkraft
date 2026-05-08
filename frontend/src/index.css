@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,14 +11,16 @@
   --dark: #1A1A1A;
 }
 
-body { font-family: 'Raleway', sans-serif; color: #1A1A1A; background: #fff; }
+body { font-family: 'Poppins', sans-serif; font-size: 14px; color: #1A1A1A; background: #fff; }
 html { scroll-behavior: smooth; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 600; }
 
 @layer components {
   .btn-gold { @apply bg-yellow-600 text-white font-semibold px-6 py-3 transition-all duration-300 hover:bg-yellow-700 tracking-wider text-sm uppercase; }
   .btn-outline-gold { @apply border border-yellow-600 text-yellow-700 font-semibold px-6 py-3 transition-all duration-300 hover:bg-yellow-600 hover:text-white tracking-wider text-sm uppercase; }
   .btn-dark { @apply bg-gray-900 text-white font-semibold px-6 py-3 transition-all duration-300 hover:bg-yellow-600 hover:text-white tracking-wider text-sm uppercase; }
-  .section-title { @apply font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-3; }
+  .section-title { @apply  text-3xl md:text-4xl font-bold text-gray-900 mb-3; }
   .gold-underline { @apply w-12 h-1 bg-yellow-600 mb-6; }
   .card-hover { @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl; }
 }

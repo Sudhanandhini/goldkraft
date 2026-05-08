@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import bannerImage from '../assets/slider-1.webp';
 
 const SocialIcon = ({ children, href }) => (
   <a href={href} className="w-8 h-8 bg-gray-700 hover:bg-yellow-600 flex items-center justify-center transition-colors rounded text-sm">
@@ -11,19 +12,21 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       {/* CTA Banner */}
-      <div className="bg-yellow-600 py-10 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/path-to-your-image.jpg')"}}>
+      <div className="bg-yellow-600 py-10 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: `url(${bannerImage})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
           <div>
             <p className="text-white text-sm font-medium italic mb-1">Have Any Question!</p>
-            <h3 className="text-white text-2xl md:text-3xl font-serif font-bold">DON'T HESITATE TO CONTACT US ANY TIME.</h3>
+            <h3 className="text-white text-2xl md:text-3xl  font-bold">DON'T HESITATE TO CONTACT US ANY TIME.</h3>
           </div>
           <div className="flex gap-3">
             <Link to="/contact" className="bg-white text-yellow-700 font-semibold px-8 py-3 hover:bg-gray-900 hover:text-white transition-all duration-300 uppercase tracking-wider text-sm">
               Contact Us
             </Link>
-            <a href="https://wa.me/919449065735" target="_blank" rel="noreferrer" className="bg-green-600 text-white font-semibold px-6 py-3 hover:bg-green-700 transition-all duration-300 uppercase tracking-wider text-sm">
+            {/* <a href="https://wa.me/919449065735" target="_blank" rel="noreferrer" className="bg-green-500 text-white font-semibold px-6 py-3 hover:bg-green-600 transition-all duration-300 uppercase tracking-wider text-sm">
               WhatsApp Us
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
@@ -36,7 +39,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <div className="w-9 h-9 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold">G</div>
               <div>
-                <div className="font-serif font-bold text-base"><span className="text-yellow-500">GOLD</span><span className="text-white">KRAFT</span></div>
+                <div className=" font-bold text-base"><span className="text-yellow-500">GOLD</span><span className="text-white">KRAFT</span></div>
                 <div className="text-xs text-gray-500 tracking-widest uppercase">Enterprises</div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Phone, Mail, Clock, Menu, X, ChevronDown } from "lucide-react";
+import logo from '../assets/logo.png';
 
 const solutions = [
   'Bird Netting Systems', 'Bird Wire Systems', 'Bird Spikes',
@@ -55,20 +56,20 @@ export default function Navbar() {
       {/* Main Navbar */}
       <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white shadow-sm'}`}>
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-32 md:h-32">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-lg">G</div>
+             <img src={logo} alt="Goldkraft Logo" className="w-32 h-auto "/>
               <div>
-                <div className="font-serif font-bold text-lg md:text-xl leading-tight">
+                {/* <div className="font-serif font-bold text-[20px] md:text-xl leading-tight">
                   <span className="text-yellow-600">GOLD</span><span className="text-gray-900">KRAFT</span>
                 </div>
-                <div className="text-xs text-gray-500 tracking-widest uppercase">Enterprises</div>
+                <div className="text-xs text-gray-500 tracking-widest uppercase">Enterprises</div> */}
               </div>
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
+            <div className="hidden lg:flex items-center gap-7 text-[18px] font-medium">
               <NavLink to="/" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Home</NavLink>
               <NavLink to="/about" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>About Us</NavLink>
 

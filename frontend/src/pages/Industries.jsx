@@ -53,7 +53,7 @@ const industries = [
   {
     icon: '🏭',
     title: 'Factories',
-    img: 'https://images.unsplash.com/photo-1581093458791-9e88c0647d87?w=600&q=70',
+    img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=70',
     desc: 'Manufacturing facilities need bird control that complies with food safety and quality standards. Our factory solutions are designed for challenging industrial environments.',
     challenges: ['Production line contamination', 'Regulatory compliance', 'Machinery protection', 'Worker safety'],
     solutions: ['Food-grade netting', 'Industrial exclusion systems', 'Machinery guards', 'Perimeter control'],
@@ -76,7 +76,7 @@ export default function Industries() {
         <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=70" alt="Industries" className="absolute inset-0 w-full h-full object-cover opacity-25" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center">
           <p className="text-yellow-500 text-xs font-semibold tracking-[3px] uppercase mb-3">We Serve</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white">Industries We Serve</h1>
+          <h1 className=" text-4xl md:text-5xl font-bold text-white">Industries We Serve</h1>
           <div className="flex items-center gap-2 mt-3 text-gray-400 text-sm">
             <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
             <span>›</span>
@@ -88,7 +88,7 @@ export default function Industries() {
       {/* Intro */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl font-bold text-gray-900 mb-4">Bird Control Across All Property Types</h2>
+          <h2 className=" text-3xl font-bold text-gray-900 mb-4">Bird Control Across All Property Types</h2>
           <div className="w-12 h-0.5 bg-yellow-600 mx-auto mb-6" />
           <p className="text-gray-600 leading-relaxed">
             Goldkraft Enterprises serves a wide range of industries across Karnataka and India. Our team of experts understands the unique challenges each property type faces and delivers custom bird control solutions that are effective, aesthetic, and compliant with relevant standards.
@@ -106,7 +106,7 @@ export default function Industries() {
                 <div className="absolute top-4 left-4 bg-yellow-600 text-white text-2xl w-12 h-12 flex items-center justify-center rounded">{ind.icon}</div>
               </div>
               <div className="p-6">
-                <h3 className="font-serif text-xl font-bold text-gray-900 mb-2">{ind.title}</h3>
+                <h3 className=" text-xl font-bold text-gray-900 mb-2">{ind.title}</h3>
                 <div className="w-8 h-0.5 bg-yellow-600 mb-3" />
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">{ind.desc}</p>
                 <div className="grid grid-cols-2 gap-4">
@@ -143,7 +143,7 @@ export default function Industries() {
       {/* CTA */}
       <section className="py-16 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl font-bold text-white mb-4">Don't See Your Industry?</h2>
+          <h2 className=" text-3xl font-bold text-white mb-4">Don't See Your Industry?</h2>
           <p className="text-gray-400 mb-8">We serve many more property types. Contact us for a customized bird control assessment.</p>
           <Link to="/contact" className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-8 py-3.5 uppercase text-sm tracking-wider transition-all duration-300 inline-flex items-center gap-2">
             Contact Us <ArrowRight size={15}/>

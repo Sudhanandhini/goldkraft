@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 const products = [
   {
     title: 'Anti Bird Spikes',
-    img: 'https://images.unsplash.com/photo-1581093458791-9e88c0647d87?w=600&q=70',
+    img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=70',
     desc: 'Bird spikes are designed to deter birds from roosting in desirable areas. They have a narrow, flexible base with protruding SS / Polycarbonate spikes. Bird spikes aren\'t designed to hurt birds. In fact, the spikes are blunt, which prevents injury to birds and workers installing them.',
     features: ['Stainless Steel & Polycarbonate options', 'UV resistant material', 'Easy installation', 'Long lasting – 10+ years'],
     applications: ['Ledges & Parapets', 'Roof edges', 'Signage boards', 'AC units'],
@@ -54,7 +54,7 @@ export default function Solutions() {
         <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=70" alt="Solutions" className="absolute inset-0 w-full h-full object-cover opacity-30" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center">
           <p className="text-yellow-500 text-xs font-semibold tracking-[3px] uppercase mb-3">What We Offer</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white">Bird Control Solutions</h1>
+          <h1 className=" text-4xl md:text-5xl font-bold text-white">Bird Control Solutions</h1>
           <div className="flex items-center gap-2 mt-3 text-gray-400 text-sm">
             <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
             <span>›</span>
@@ -67,7 +67,7 @@ export default function Solutions() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-14">
-            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">Our Products & Services</h2>
+            <h2 className=" text-3xl font-bold text-gray-900 mb-3">Our Products & Services</h2>
             <div className="w-12 h-0.5 bg-yellow-600 mx-auto mb-4" />
             <p className="text-gray-500 max-w-xl mx-auto">Comprehensive range of eco-friendly bird control solutions tailored for every property type and bird species.</p>
           </div>
@@ -81,7 +81,7 @@ export default function Solutions() {
                   </div>
                 </div>
                 <div className={i % 2 === 1 ? 'md:col-start-1 md:row-start-1' : ''}>
-                  <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">{p.title}</h3>
+                  <h3 className=" text-2xl font-bold text-gray-900 mb-3">{p.title}</h3>
                   <div className="w-10 h-0.5 bg-yellow-600 mb-4" />
                   <p className="text-gray-600 leading-relaxed mb-5 text-sm">{p.desc}</p>
                   <div className="grid grid-cols-2 gap-6 mb-5">
@@ -119,7 +119,7 @@ export default function Solutions() {
       {/* CTA */}
       <section className="py-16 bg-yellow-600">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl font-bold text-white mb-4">Not Sure Which Solution Is Right For You?</h2>
+          <h2 className=" text-3xl font-bold text-white mb-4">Not Sure Which Solution Is Right For You?</h2>
           <p className="text-yellow-100 mb-8">Our experts will assess your property and recommend the most effective, aesthetically-pleasing solution.</p>
           <Link to="/contact" className="bg-white text-yellow-700 hover:bg-gray-900 hover:text-white font-semibold px-8 py-3.5 uppercase text-sm tracking-wider transition-all duration-300 inline-flex items-center gap-2">
             Schedule Free Inspection <ArrowRight size={15}/>

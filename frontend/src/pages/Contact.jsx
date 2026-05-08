@@ -19,7 +19,7 @@ export default function Contact() {
         <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=70" alt="Contact" className="absolute inset-0 w-full h-full object-cover opacity-25" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center">
           <p className="text-yellow-500 text-xs font-semibold tracking-[3px] uppercase mb-3">Get In Touch</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white">Contact Us</h1>
+          <h1 className=" text-4xl md:text-5xl font-bold text-white">Contact Us</h1>
           <div className="flex items-center gap-2 mt-3 text-gray-400 text-sm">
             <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
             <span>›</span>
@@ -34,7 +34,7 @@ export default function Contact() {
           {/* Left: Info */}
           <div>
             <p className="text-yellow-600 text-xs font-semibold tracking-[3px] uppercase mb-2">Reach Us</p>
-            <h2 className="font-serif text-3xl font-bold text-gray-900 mb-3">We'd Love to Hear From You</h2>
+            <h2 className=" text-3xl font-bold text-gray-900 mb-3">We'd Love to Hear From You</h2>
             <div className="w-12 h-0.5 bg-yellow-600 mb-6" />
             <p className="text-gray-600 leading-relaxed mb-8">
               Get in touch with our team for a free site inspection and quotation. We serve Bengaluru and surrounding areas, with pan-India coverage for large projects.
@@ -94,13 +94,13 @@ export default function Contact() {
           {/* Right: Form */}
           <div>
             <div className="bg-gray-50 border border-gray-100 p-8">
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">Schedule a Free Inspection</h3>
+              <h3 className=" text-2xl font-bold text-gray-900 mb-2">Schedule a Free Inspection</h3>
               <div className="w-10 h-0.5 bg-yellow-600 mb-6" />
 
               {submitted ? (
                 <div className="text-center py-12">
                   <CheckCircle2 size={56} className="text-green-500 mx-auto mb-4"/>
-                  <h4 className="font-serif text-xl font-bold text-gray-900 mb-2">Thank You!</h4>
+                  <h4 className=" text-xl font-bold text-gray-900 mb-2">Thank You!</h4>
                   <p className="text-gray-600">Your enquiry has been received. Our team will contact you within 24 hours to schedule your free site inspection.</p>
                 </div>
               ) : (
