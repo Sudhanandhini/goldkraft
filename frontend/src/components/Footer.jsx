@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="bg-yellow-600 py-10 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: `url(${bannerImage})`, backgroundSize: "cover", backgroundPosition: "center"}}>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+        <div className="w-full px-10 xl:px-20 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
           <div>
             <p className="text-white text-sm font-medium italic mb-1">Have Any Question!</p>
             <h3 className="text-white text-2xl md:text-3xl  font-bold">DON'T HESITATE TO CONTACT US ANY TIME.</h3>
@@ -33,7 +33,7 @@ export default function Footer() {
 
       {/* Main footer */}
       <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="w-full px-10 xl:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -99,7 +99,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="border-t border-gray-800 py-5">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+        <div className="w-full px-10 xl:px-20 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
           <p>© 2024 Goldkraft Enterprises. All Rights Reserved. Crafted by Sunsys Technologies Pvt Ltd.</p>
           <div className="flex gap-4">
             <Link to="/contact" className="hover:text-yellow-500 transition-colors">Privacy Policy</Link>

@@ -30,8 +30,8 @@ export default function Navbar() {
   return (
     <>
       {/* Top bar */}
-      <div className="bg-gray-900 text-gray-300 text-xs py-2 hidden md:block">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div className="bg-gray-900 text-gray-300 text-xs py-2 hidden md:block ">
+        <div className="w-full px-10 xl:px-20 flex justify-between items-center">
           <div className="flex gap-6 items-center">
             <a href="tel:9449065735" className="flex items-center gap-1.5 hover:text-yellow-500 transition-colors">
               <Phone size={12} className="text-yellow-600" />
@@ -54,8 +54,8 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar */}
-      <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white shadow-sm'}`}>
-        <div className="max-w-7xl mx-auto px-4">
+      <nav className={`  sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white shadow-sm'}`}>
+        <div className="w-full px-10 xl:px-20">
           <div className="flex items-center justify-between h-32 md:h-32">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
@@ -69,7 +69,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden lg:flex items-center gap-7 text-[18px] font-medium">
+            <div className="hidden lg:flex items-center gap-10 text-[18px] font-medium">
               <NavLink to="/" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Home</NavLink>
               <NavLink to="/about" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>About Us</NavLink>
 
@@ -82,7 +82,10 @@ export default function Navbar() {
 
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <Link to="/contact" className="btn-dark text-xs px-5 py-2.5">Schedule Inspection</Link>
+              <a href="tel:+919880448016" className="flex items-center gap-2 border border-yellow-600 text-gray-900 hover:bg-yellow-600 hover:text-white font-semibold px-5 py-2.5 rounded transition-all duration-300 text-sm">
+                <Phone size={15} className="text-yellow-600 group-hover:text-white" />
+                +91 98804 48016
+              </a>
             </div>
 
             {/* Mobile menu button */}
