@@ -1,45 +1,54 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
+import img1 from '../assets/img1 (1).webp'
+import img2 from '../assets/img1 (2).webp'
+import img3 from '../assets/img1 (3).webp'
+import img4 from '../assets/img1 (4).webp'
+import img5 from '../assets/img1 (5).webp'
+import img6 from '../assets/img1 (6).webp'
+import img7 from '../assets/img1 (7).webp'
+import img8 from '../assets/img1 (8).webp'
+
 const products = [
   {
     title: 'Anti Bird Spikes',
-    img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=70',
+    img: img8,
     desc: 'Bird spikes are designed to deter birds from roosting in desirable areas. They have a narrow, flexible base with protruding SS / Polycarbonate spikes. Bird spikes aren\'t designed to hurt birds. In fact, the spikes are blunt, which prevents injury to birds and workers installing them.',
     features: ['Stainless Steel & Polycarbonate options', 'UV resistant material', 'Easy installation', 'Long lasting – 10+ years'],
     applications: ['Ledges & Parapets', 'Roof edges', 'Signage boards', 'AC units'],
   },
   {
     title: 'Bird Wire System',
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=70',
+    img: img2,
     desc: 'A spring-tensioned post and wire system designed to create an unstable landing area that discourages pest birds from landing. Birdwire is a bird control solution that is widely used throughout because it is very low-profile and has minimal visual impact. The Birdwire system is one of the least visible of all ledge products.',
     features: ['Stainless steel wire', 'Spring-tensioned system', 'Low visual profile', 'Suitable for premium facades'],
     applications: ['Building facades', 'Ledges & beams', 'High-rise buildings', 'Heritage structures'],
   },
   {
     title: 'Bird Deterrent Gel',
-    img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=70',
+    img: img3,
     desc: 'Bird Deterrent Gel is a Bird Deterrent Gel made from all Non-Toxic natural ingredients and does not harm any kind of birds, human being or any animal. After application, it creates an unstable surface unacceptable to birds & thus deters their presence.',
     features: ['Non-toxic formula', 'Eco-friendly', 'Long lasting effect', 'Easy application'],
     applications: ['Narrow ledges', 'Window sills', 'AC units', 'Overhead beams'],
   },
   {
     title: 'Anti Bird Nets',
-    img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=70',
+    img: img4,
     desc: 'Anti Bird Nets are UV stabilized, knotted polyethylene nets that provide a physical barrier to prevent birds from accessing protected areas. Available in various mesh sizes to suit different bird species and area requirements.',
     features: ['UV stabilized material', 'Various mesh sizes', 'Lightweight & durable', 'Invisible from distance'],
     applications: ['Warehouses', 'Balconies', 'Open courtyards', 'Agricultural areas'],
   },
   {
     title: 'Bird Shock Tracks',
-    img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=70',
+    img: img5,
     desc: 'Bird Shock Track system delivers a mild electric shock to birds that land on surfaces. The shock is a mild, harmless deterrent that conditions birds to avoid treated areas. Ideal for large flat surfaces and rooftops.',
     features: ['Mild, safe electric deterrent', 'Solar or AC powered', 'Weather resistant', 'Discreet design'],
     applications: ['Rooftops', 'Flat surfaces', 'HVAC units', 'Industrial plants'],
   },
   {
     title: 'Solar Panel Protection',
-    img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=70',
+    img: img6,
     desc: 'Specialized bird proofing for solar panel arrays. Prevents birds from nesting beneath solar panels, which can cause damage, reduce efficiency, and create hygiene hazards. Custom fitted mesh systems that don\'t affect panel performance.',
     features: ['Panel-specific design', 'No drilling into panels', 'Stainless steel clips', 'Long-lasting protection'],
     applications: ['Residential solar', 'Commercial solar farms', 'Industrial rooftops', 'Schools & hospitals'],

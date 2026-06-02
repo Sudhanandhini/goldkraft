@@ -46,8 +46,12 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 600; }
 .nav-link { position: relative; }
 .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #C9A84C; transition: width 0.3s ease; }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-.client-logo { filter: grayscale(100%); opacity: 0.5; transition: all 0.3s; }
-.client-logo:hover { filter: grayscale(0%); opacity: 1; }
+.client-logo { filter: grayscale(0%); opacity: 1; transition: all 0.3s; }
+.client-logo:hover { opacity: 0.8; transform: scale(1.05); }
+
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.animate-marquee { animation: marquee 28s linear infinite; }
+.animate-marquee:hover { animation-play-state: paused; }
 .dropdown { position: relative; }
 .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); z-index: 999; border-top: 3px solid #C9A84C; }
 .dropdown:hover .dropdown-menu { display: block; }

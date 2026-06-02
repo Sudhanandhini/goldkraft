@@ -1,11 +1,20 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
+import img1 from '../assets/img1 (1).webp'
+import img2 from '../assets/img1 (2).webp'
+import img3 from '../assets/img1 (3).webp'
+import img4 from '../assets/img1 (4).webp'
+import img5 from '../assets/img1 (5).webp'
+import img6 from '../assets/img1 (6).webp'
+import img7 from '../assets/img1 (7).webp'
+import img8 from '../assets/img1 (8).webp'
+
 const industries = [
   {
     icon: '🏠',
     title: 'Luxury Villas',
-    img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=70',
+    img: img1 ,
     desc: 'Premium bird proofing solutions for luxury residential properties that protect the aesthetic appeal while ensuring complete bird exclusion. Our low-visibility systems blend seamlessly with high-end architecture.',
     challenges: ['Maintaining architectural aesthetics', 'Pigeon nesting on balconies', 'Bird droppings on facades', 'Roof garden protection'],
     solutions: ['Bird wire systems', 'Transparent netting', 'Balcony proofing', 'Custom installations'],
@@ -13,7 +22,7 @@ const industries = [
   {
     icon: '🏢',
     title: 'Corporate Offices',
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=70',
+    img: img2,
     desc: 'Maintain a professional image and hygienic environment for your corporate offices with our discrete bird control solutions that don\'t interfere with the building\'s visual identity.',
     challenges: ['Professional image maintenance', 'Health & hygiene compliance', 'AC unit contamination', 'Facade damage'],
     solutions: ['Bird netting systems', 'Wire deterrents', 'Spike systems', 'Acoustic deterrents'],
@@ -21,7 +30,7 @@ const industries = [
   {
     icon: '🏨',
     title: 'Hotels & Resorts',
-    img: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&q=70',
+    img: img3,
     desc: 'Protect your guests\' experience and your property\'s reputation with effective bird management that remains invisible. Perfect for poolside areas, outdoor dining, and hotel rooftops.',
     challenges: ['Guest experience protection', 'Restaurant & pool areas', 'Outdoor event spaces', 'Kitchen hygiene'],
     solutions: ['Invisible mesh systems', 'Wire deterrents', 'Sonic systems', 'Gel applications'],
@@ -29,7 +38,7 @@ const industries = [
   {
     icon: '🏥',
     title: 'Hospitals',
-    img: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=70',
+    img: img4,
     desc: 'Critical hygiene requirements in healthcare facilities demand zero-tolerance bird control. We provide medical-grade bird exclusion solutions that meet healthcare compliance standards.',
     challenges: ['Infection control requirements', 'HVAC system protection', 'Patient area hygiene', 'Medical waste contamination risk'],
     solutions: ['Complete exclusion netting', 'Roof protection systems', 'HVAC protection', 'Full perimeter control'],
@@ -37,7 +46,7 @@ const industries = [
   {
     icon: '🏬',
     title: 'Shopping Malls',
-    img: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=600&q=70',
+    img: img5,
     desc: 'Ensure a pleasant shopping experience by keeping bird-free food courts, entrances, and open areas. Our solutions handle large commercial spaces with minimal disruption.',
     challenges: ['Food court contamination', 'Customer experience', 'Large open atria', 'Car park areas'],
     solutions: ['Large-area netting', 'Entry point protection', 'Atrium exclusion', 'Perimeter systems'],
@@ -45,7 +54,7 @@ const industries = [
   {
     icon: '🏗️',
     title: 'Warehouses',
-    img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=70',
+    img: img6,
     desc: 'Industrial warehouses require robust bird control solutions that withstand heavy-duty environments while protecting stored goods from contamination and damage.',
     challenges: ['Product contamination', 'Loading dock protection', 'High ceiling areas', 'Fire safety compliance'],
     solutions: ['Heavy-duty netting', 'Industrial spike systems', 'Shock track systems', 'Ultrasonic deterrents'],
@@ -53,7 +62,7 @@ const industries = [
   {
     icon: '🏭',
     title: 'Factories',
-    img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=70',
+    img: img7,
     desc: 'Manufacturing facilities need bird control that complies with food safety and quality standards. Our factory solutions are designed for challenging industrial environments.',
     challenges: ['Production line contamination', 'Regulatory compliance', 'Machinery protection', 'Worker safety'],
     solutions: ['Food-grade netting', 'Industrial exclusion systems', 'Machinery guards', 'Perimeter control'],
@@ -61,7 +70,7 @@ const industries = [
   {
     icon: '🏙️',
     title: 'High-Rise Apartments',
-    img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=70',
+    img: img8,
     desc: 'Comprehensive bird proofing for multi-story residential complexes that addresses common area, individual balcony, and rooftop bird problems.',
     challenges: ['Multiple balcony access points', 'Common area management', 'Rooftop garden protection', 'Resident concerns'],
     solutions: ['Individual balcony nets', 'Common area protection', 'Rooftop exclusion', 'Wire systems'],

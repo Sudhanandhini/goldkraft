@@ -1,6 +1,15 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle2, Shield, ArrowRight } from 'lucide-react';
 
+import img1 from '../assets/img1 (1).webp'
+import img2 from '../assets/img1 (2).webp'
+import img3 from '../assets/img1 (3).webp'
+import img4 from '../assets/img1 (4).webp'
+import img5 from '../assets/img1 (5).webp'
+import img6 from '../assets/img1 (6).webp'
+import img7 from '../assets/img1 (7).webp'
+import img8 from '../assets/img1 (8).webp'
+
 const values = [
   { title: 'Quality', icon: '🎯', desc: 'Quality is achieved through carefully selected partners, consumables, well-maintained equipment, and engineering expertise, following international standards.' },
   { title: 'Customer Satisfaction', icon: '🤝', desc: 'Customer satisfaction is measured constantly and we encourage an open dialogue with all our customers. Feedback and proposals on the service and products are the best means for improvements.' },
@@ -57,7 +66,7 @@ export default function About() {
             </div>
           </div>
           <div className="relative">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80" alt="Who We Are" className="w-full h-[450px] object-cover shadow-lg" />
+            <img src={img4} alt="Who We Are" className="w-full h-[450px] object-cover shadow-lg" />
             <div className="absolute -bottom-6 -left-6 bg-yellow-600 text-white p-6 shadow-xl">
               <div className=" text-4xl font-bold">8+</div>
               <div className="text-sm font-medium mt-1">Years of Excellence</div>
@@ -98,14 +107,7 @@ export default function About() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
-              'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=70',
-              'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=70',
-              'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&q=70',
-              'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=400&q=70',
-              'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=70',
-              'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&q=70',
-              'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=70',
-              'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=400&q=70',
+             img1, img2, img3, img4, img5, img6, img7, img8
             ].map((img, i) => (
               <div key={i} className="overflow-hidden group">
                 <img src={img} alt={`Gallery ${i+1}`} className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500" />
