@@ -471,7 +471,7 @@ Our focus is on delivering clean installations, long-lasting protection and aest
       
       
       {/* ========= STATS ========= */}
-      <section className="bg-white py-10 border-b border-gray-100">
+      {/* <section className="bg-white py-10 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-4">
           {stats.map((s, i) => (
             <div key={i} className="flex items-center gap-4 py-6 px-4 border-r last:border-r-0 border-gray-100">
@@ -487,7 +487,7 @@ Our focus is on delivering clean installations, long-lasting protection and aest
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
      
    

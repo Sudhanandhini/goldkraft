@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import bannerImage from '../assets/slider-1.webp';
+import footer from '../assets/footer.png';
 
 const SocialIcon = ({ children, href }) => (
   <a href={href} className="w-8 h-8 bg-gray-700 hover:bg-yellow-600 flex items-center justify-center transition-colors rounded text-sm">
@@ -37,19 +38,24 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold">G</div>
+              {/* <div className="w-9 h-9 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold">G</div>
               <div>
                 <div className=" font-bold text-base"><span className="text-yellow-500">GOLD</span><span className="text-white">KRAFT</span></div>
                 <div className="text-xs text-gray-500 tracking-widest uppercase">Enterprises</div>
-              </div>
+              </div> */}
+              <img src={footer} alt="Goldkraft Enterprises" className="w-32 h-auto" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               We provide eco-friendly, effective and aesthetic bird control solutions for commercial, industrial and residential properties.
             </p>
             <div className="flex gap-3 mt-4">
-              <SocialIcon href="#">in</SocialIcon>
-              <SocialIcon href="#">ig</SocialIcon>
-              <SocialIcon href="#">fb</SocialIcon>
+              <SocialIcon href="https://www.linkedin.com/company/goldkraft-enterprises" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </SocialIcon>
+              <SocialIcon href="http://www.youtube.com/@GoldkraftBirdControl" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1a1a1a"/></svg>
+              </SocialIcon>
+           
             </div>
           </div>
 
