@@ -13,11 +13,11 @@ import partner7 from '../assets/partner (7).png';
 import partner8 from '../assets/partner (8).png';
 import partner9 from '../assets/partner (9).png';
 
-import img1 from '../assets/img1 (1).webp'
-import img2 from '../assets/9.jpg'
-import img3 from '../assets/img1 (3).webp'
-import img4 from '../assets/img1 (4).webp'
-import img5 from '../assets/img1 (5).webp'
+import img1 from '../assets/44.jpg'
+import img2 from '../assets/43.jpg'
+import img3 from '../assets/42.jpg'
+import img4 from '../assets/42.jpg'
+import img5 from '../assets/40.jpg'
 import img6 from '../assets/img1 (6).webp'
 import img7 from '../assets/img1 (7).webp'
 import img8 from '../assets/img1 (8).webp'
@@ -38,22 +38,22 @@ import p32 from '../assets/32.jpg'
 const partnerLogos = [partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9];
 
 const projects = [
-  { num:'01', cat:'Residential',  title:'Luxury Villa – Whitefield, Bengaluru',   type:'Bird Wire System',          img:img1,  desc:'Low-visibility bird wire solution preserving facade aesthetics while eliminating pigeon nesting on all balconies and rooftop edges.' },
-  { num:'02', cat:'Commercial',   title:'Corporate Office – Hyderabad',             type:'Anti Bird Netting',          img:img2,  desc:'Custom bird proofing for high-rise facade protection with minimal visual impact. Full floor coverage netting installation.' },
-  { num:'03', cat:'Industrial',   title:'Warehouse – Electronic City',              type:'Industrial Netting',         img:img3,  desc:'Industrial bird control system for hygiene compliance and operational safety across 50,000 sq.ft warehouse facility.' },
-  { num:'04', cat:'Hospitality',  title:'TAJ Hotel – MG Road, Bengaluru',           type:'Bird Wire System',           img:img4,  desc:'Discrete bird wire installation to protect the iconic hotel facade while maintaining the heritage architectural aesthetics.' },
-  { num:'05', cat:'Residential',  title:'Brigade Apartments – Sarjapur',            type:'Balcony Netting',            img:img5,  desc:'Complete balcony bird proofing for 250+ apartments in a luxury residential complex using UV-stabilised transparent nets.' },
-  { num:'06', cat:'Commercial',   title:'HAL – Aerospace Plant, Bengaluru',         type:'Industrial Netting',         img:img6,  desc:'Large-scale bird exclusion for HAL aerospace manufacturing plant ensuring production hygiene and regulatory compliance.' },
-  { num:'07', cat:'Industrial',   title:'Solar Farm – Tumkur',                      type:'Solar Panel Protection',     img:img7,  desc:'Specialised bird mesh installation protecting 2MW solar panel array from bird nesting, increasing panel efficiency.' },
-  { num:'08', cat:'Hospitality',  title:'Columbia Asia Hospital – Bengaluru',       type:'Complete Bird Exclusion',    img:img8,  desc:'Medical-grade bird exclusion system across HVAC units, rooftop, and critical areas meeting hospital hygiene standards.' },
-  { num:'09', cat:'Commercial',   title:'Prestige Exora – ITPL Tech Park',          type:'Bird Spike System',          img:p5,    desc:'Comprehensive anti-bird spike installation across parking areas, parapet walls and canopy edges of tech campus.' },
-  { num:'10', cat:'Residential',  title:'Luxury Apartment Complex – Koramangala',  type:'Bird Net Installation',      img:p32,   desc:'Full-perimeter bird proofing for a premium high-rise residential tower covering 18 floors of balconies and common areas.' },
-  { num:'11', cat:'Hospitality',  title:'Rooftop Swimming Pool – Indiranagar',      type:'Swimming Pool Bird Control', img:p18,   desc:'Aesthetic near-invisible wire systems installed around a luxury rooftop pool deck, maintaining the premium visual appeal.' },
-  { num:'12', cat:'Industrial',   title:'Factory – Peenya Industrial Area',         type:'Industrial Bird Exclusion',  img:p10,   desc:'Heavy-duty netting system across 30,000 sq.ft factory floor ensuring food-grade hygiene compliance for manufacturing.' },
-  { num:'13', cat:'Commercial',   title:'Glass Office Tower – Whitefield',          type:'Bird Wire System',           img:p25,   desc:'Precision wire deterrent system across glass facades and window ledges of a modern commercial office tower.' },
-  { num:'14', cat:'Residential',  title:'Villa Community – JP Nagar',               type:'Bird Wire System',           img:p17,   desc:'Discreet bird wire installation across 32 independent villas preserving premium landscaping and facade aesthetics.' },
-  { num:'15', cat:'Commercial',   title:'Multi-Storey Building – Marathahalli',     type:'Anti Bird Netting',          img:p22,   desc:'Complete facade netting across 12 floors of a commercial building with custom access panels for maintenance.' },
-  { num:'16', cat:'Hospitality',  title:'Hotel Rooftop & Pool Deck – MG Road',      type:'Pool & Terrace Protection',  img:p9,    desc:'Combined rooftop terrace and swimming pool bird proofing for a premium city-centre hotel using invisible wire systems.' },
+  { num:'01', cat:'Residential',  title:'Bird Wire System installed at Kingfisher Towers, Bengaluru',   type:'Bird Wire System',          img:img1,  desc:'Low-visibility bird wire solution preserving facade aesthetics while eliminating pigeon nesting on all balconies and rooftop edges.' },
+  { num:'02', cat:'Commercial',   title:'Anti Bird Spikes at Embassy Lake Terraces, Hebbal, Bengaluru',             type:'Anti Bird Netting',          img:img2,  desc:'Custom bird proofing for high-rise facade protection with minimal visual impact. Full floor coverage netting installation.' },
+  { num:'03', cat:'Industrial',   title:'Bird Control Services work in progress at The Leela Palace, Old Airport Road, Bengaluru',              type:'Industrial Netting',         img:img3,  desc:'Industrial bird control system for hygiene compliance and operational safety across 50,000 sq.ft warehouse facility.' },
+  { num:'04', cat:'Hospitality',  title:'Anti Bird Control Netting installed for a villa in Bangalore',           type:'Bird Wire System',           img:img4,  desc:'Discrete bird wire installation to protect the iconic hotel facade while maintaining the heritage architectural aesthetics.' },
+  { num:'05', cat:'Residential',  title:'Anti-bird gel application',            type:'Balcony Netting',            img:img5,  desc:'Complete balcony bird proofing for 250+ apartments in a luxury residential complex using UV-stabilised transparent nets.' },
+   { num:'06', cat:'Commercial',   title:'Beckmen Coulter Life Sciences',         type:'industrial anti bird netting',         img:img6,  desc:'Industrial anti-bird netting is a durable and effective bird control solution designed to protect warehouses, factories, commercial buildings, and industrial spaces from pigeon intrusion. It helps maintain hygiene, prevents bird-related damage, and ensures safer and cleaner working environments.' },
+  // { num:'07', cat:'Industrial',   title:'Solar Farm – Tumkur',                      type:'Solar Panel Protection',     img:img7,  desc:'Specialised bird mesh installation protecting 2MW solar panel array from bird nesting, increasing panel efficiency.' },
+  // { num:'08', cat:'Hospitality',  title:'Columbia Asia Hospital – Bengaluru',       type:'Complete Bird Exclusion',    img:img8,  desc:'Medical-grade bird exclusion system across HVAC units, rooftop, and critical areas meeting hospital hygiene standards.' },
+  // { num:'09', cat:'Commercial',   title:'Prestige Exora – ITPL Tech Park',          type:'Bird Spike System',          img:p5,    desc:'Comprehensive anti-bird spike installation across parking areas, parapet walls and canopy edges of tech campus.' },
+  // { num:'10', cat:'Residential',  title:'Luxury Apartment Complex – Koramangala',  type:'Bird Net Installation',      img:p32,   desc:'Full-perimeter bird proofing for a premium high-rise residential tower covering 18 floors of balconies and common areas.' },
+  // { num:'11', cat:'Hospitality',  title:'Rooftop Swimming Pool – Indiranagar',      type:'Swimming Pool Bird Control', img:p18,   desc:'Aesthetic near-invisible wire systems installed around a luxury rooftop pool deck, maintaining the premium visual appeal.' },
+  // { num:'12', cat:'Industrial',   title:'Factory – Peenya Industrial Area',         type:'Industrial Bird Exclusion',  img:p10,   desc:'Heavy-duty netting system across 30,000 sq.ft factory floor ensuring food-grade hygiene compliance for manufacturing.' },
+  // { num:'13', cat:'Commercial',   title:'Glass Office Tower – Whitefield',          type:'Bird Wire System',           img:p25,   desc:'Precision wire deterrent system across glass facades and window ledges of a modern commercial office tower.' },
+  // { num:'14', cat:'Residential',  title:'Villa Community – JP Nagar',               type:'Bird Wire System',           img:p17,   desc:'Discreet bird wire installation across 32 independent villas preserving premium landscaping and facade aesthetics.' },
+  // { num:'15', cat:'Commercial',   title:'Multi-Storey Building – Marathahalli',     type:'Anti Bird Netting',          img:p22,   desc:'Complete facade netting across 12 floors of a commercial building with custom access panels for maintenance.' },
+  // { num:'16', cat:'Hospitality',  title:'Hotel Rooftop & Pool Deck – MG Road',      type:'Pool & Terrace Protection',  img:p9,    desc:'Combined rooftop terrace and swimming pool bird proofing for a premium city-centre hotel using invisible wire systems.' },
 ];
 
 /* ── Scroll animation ── */
