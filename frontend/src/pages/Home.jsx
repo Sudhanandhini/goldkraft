@@ -240,7 +240,7 @@ export default function Home() {
           <div className=" px-10">
             <div className="">
             <p className="text-yellow-600 text-md font-semibold tracking-[3px] uppercase mb-2">About us</p>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Professional Bird Proofing Solutions</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Professional Eco-Friendly Bird Proofing Solutions</h2>
             <div className="w-12 h-0.5 bg-yellow-600 mb-6" />
             <p className="text-gray-600 leading-relaxed mb-4">
               We Goldkraft Enterprises provide professional bird control services designed to protect residential, commercial and industrial properties from pigeon-related issues.

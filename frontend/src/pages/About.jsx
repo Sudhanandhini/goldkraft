@@ -34,9 +34,9 @@ import g19 from '../assets/19.jpeg'
 import g20 from '../assets/20.jpeg'
 
 const stats = [
-  { num: '500+', label: 'Projects Completed',    Icon: FolderOpen },
-  { num: '8+',   label: 'Years of Excellence',   Icon: Clock3     },
-  { num: '50+',  label: 'Professional Teams',    Icon: HardHat    },
+  { num: '2000+', label: 'Projects Completed',    Icon: FolderOpen },
+  { num: '10+',   label: 'Years of Excellence',   Icon: Clock3     },
+  { num: '10+',  label: 'Professional Teams',    Icon: HardHat    },
   { num: '100%', label: 'Eco-Friendly Methods',  Icon: Leaf       },
 ];
 

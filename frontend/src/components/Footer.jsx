@@ -96,7 +96,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={15} className="text-yellow-600 mt-0.5 shrink-0"/>
-                <span className="text-gray-400">No. 4, 1st Cross, 2nd Stage, Peenya Industrial Area, Bengaluru – 560058</span>
+                <span className="text-gray-400">No. 18, 6th Main, 4th Cross,Gandhi Nagar, Bangalore - 560 009</span>
               </li>
             </ul>
           </div>

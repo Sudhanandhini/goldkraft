@@ -49,15 +49,15 @@ const contactInfo = [
   {
     Icon: MapPin, label: 'Our Office',
     lines: [
-      <span key="1">No. 4, 1st Cross, 2nd Stage,<br/>Peenya Industrial Area,<br/>Bengaluru – 560058</span>,
+      <span key="1">No. 18, 6th Main, 4th Cross,Gandhi Nagar, Bangalore - 560 009</span>,
     ],
   },
-  {
-    Icon: Clock, label: 'Business Hours',
-    lines: [
-      <span key="1">Mon – Sat: 9:00 AM – 7:00 PM<br/><span className="text-gray-500">Sunday: Closed</span></span>,
-    ],
-  },
+  // {
+  //   Icon: Clock, label: 'Business Hours',
+  //   lines: [
+  //     <span key="1">Mon – Sat: 9:00 AM – 7:00 PM<br/><span className="text-gray-500">Sunday: Closed</span></span>,
+  //   ],
+  // },
 ];
 
 const inputCls = 'w-full bg-white border border-gray-200 px-4 py-3.5 text-sm text-gray-800 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500/30 transition-all duration-200 placeholder:text-gray-400';
@@ -268,7 +268,7 @@ export default function Contact() {
             {[
               { icon: '📞', title: 'Call Us Now',         val: '+91 94490 65735',         sub: 'Mon–Sat, 9AM–7PM' },
               { icon: '✉️', title: 'Email Us',            val: 'sales@goldkraft.in',      sub: 'Reply within 24 hours' },
-              { icon: '📍', title: 'Visit Our Office',    val: 'Peenya, Bengaluru',       sub: 'No. 4, 1st Cross, 2nd Stage' },
+              { icon: '📍', title: 'Visit Our Office',    val: 'Peenya, Bengaluru',       sub: 'No. 18, 6th Main, 4th Cross,Gandhi Nagar, Bangalore - 560 009' },
             ].map((item, i) => (
               <Animate key={i} dir="up" delay={i * 80} className="py-8 px-8 flex items-center gap-4">
                 <span className="text-3xl">{item.icon}</span>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Phone, Mail, Clock, Menu, X, ChevronDown } from "lucide-react";
-import logo from '../assets/logo.png';
+import logo from '../assets/footer.png';
 
 const solutions = [
   'Bird Netting Systems', 'Bird Wire Systems', 'Bird Spikes',
@@ -35,26 +35,26 @@ export default function Navbar() {
           <div className="flex gap-6 items-center">
             <a href="tel:9449065735" className="flex items-center gap-1.5 hover:text-yellow-500 transition-colors">
               <Phone size={12} className="text-yellow-600" />
-              <span>94490 65735</span>
+              <span>+91 94490 65735</span>
             </a>
             <a href="mailto:sales@goldkraft.in" className="flex items-center gap-1.5 hover:text-yellow-500 transition-colors">
               <Mail size={12} className="text-yellow-600" />
               <span>sales@goldkraft.in</span>
             </a>
-            <span className="flex items-center gap-1.5">
+            {/* <span className="flex items-center gap-1.5">
               <Clock size={12} className="text-yellow-600" />
               <span>Mon–Sat: 9:00–19:00</span>
-            </span>
+            </span> */}
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-gray-500 text-xs">Bengaluru | Commercial & Residential Bird Control</span>
+            <span className="text- text-xs">Bengaluru | Commercial & Residential Bird Control</span>
 
           </div>
         </div>
       </div>
 
       {/* Main Navbar */}
-      <nav className={`  sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white shadow-sm'}`}>
+      <nav className={`  sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900 shadow-lg' : 'bg-gray-900 shadow-sm'}`}>
         <div className="w-full px-10 xl:px-20">
           <div className="flex items-center justify-between h-32 md:h-32">
             {/* Logo */}
@@ -70,21 +70,21 @@ export default function Navbar() {
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-10 text-[18px] font-medium">
-              <NavLink to="/" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Home</NavLink>
-              <NavLink to="/about" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>About Us</NavLink>
+              <NavLink to="/" className={({isActive}) => `nav-link text-white hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Home</NavLink>
+              <NavLink to="/about" className={({isActive}) => `nav-link text-white hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>About Us</NavLink>
 
-              <NavLink to="/solutions" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Solutions</NavLink>
-              <NavLink to="/industries" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Industries</NavLink>
+              <NavLink to="/solutions" className={({isActive}) => `nav-link text-white hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Solutions</NavLink>
+              <NavLink to="/industries" className={({isActive}) => `nav-link text-white hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Industries</NavLink>
 
-              <NavLink to="/projects" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Projects</NavLink>
-              <NavLink to="/contact" className={({isActive}) => `nav-link text-gray-700 hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Contact</NavLink>
+              <NavLink to="/projects" className={({isActive}) => `nav-link text-white hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Projects</NavLink>
+              <NavLink to="/contact" className={({isActive}) => `nav-link text-white hover:text-yellow-600 transition-colors pb-1 ${isActive ? 'text-yellow-600' : ''}`}>Contact</NavLink>
             </div>
 
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <a href="tel:+919880448016" className="flex items-center gap-2 border border-yellow-600 text-gray-900 hover:bg-yellow-600 hover:text-white font-semibold px-5 py-2.5 rounded transition-all duration-300 text-sm">
+              <a href="tel:+919449065735" className="flex items-center gap-2 border border-yellow-600 text-white hover:bg-yellow-600 hover:text-white font-semibold px-5 py-2.5 rounded transition-all duration-300 text-sm">
                 <Phone size={15} className="text-yellow-600 group-hover:text-white" />
-                +91 98804 48016
+                +91 94490 65735
               </a>
             </div>
 
