@@ -8,6 +8,8 @@ import Solutions from './pages/Solutions';
 import Industries from './pages/Industries';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
             <Route path="/industries" element={<Industries />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
           </Routes>
         </main>
         <Footer />

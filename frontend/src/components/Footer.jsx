@@ -108,8 +108,8 @@ export default function Footer() {
         <div className="w-full px-10 xl:px-20 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
           <p>© 2024 Goldkraft Enterprises. All Rights Reserved. Crafted by Sunsys Technologies Pvt Ltd.</p>
           <div className="flex gap-4">
-            <Link to="/contact" className="hover:text-yellow-500 transition-colors">Privacy Policy</Link>
-            <Link to="/contact" className="hover:text-yellow-500 transition-colors">Terms & Conditions</Link>
+            <Link to="/privacy-policy" className="hover:text-yellow-500 transition-colors">Privacy Policy</Link>
+            <Link to="/terms-conditions" className="hover:text-yellow-500 transition-colors">Terms & Conditions</Link>
           </div>
         </div>
       </div>

@@ -117,7 +117,7 @@ export default function Solutions() {
       {/* ── BANNER ── */}
       <section className="relative h-[440px] bg-[#0d1b2a] overflow-hidden flex items-end">
         <img src={banner} alt="Solutions" className="absolute inset-0 w-full h-full object-cover opacity-25" />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #0d1b2a 10%, rgba(13,27,42,0.5) 30%)' }} />
+        <div className="absolute inset-0" />
         <div className="relative w-full px-10 xl:px-20 pb-16">
           <Animate dir="up">
             <p className="text-yellow-500 text-xs font-semibold tracking-[4px] uppercase mb-3">What We Offer</p>

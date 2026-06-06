@@ -41,37 +41,37 @@ const industries = [
     challenges: ['Guest experience & comfort', 'Restaurant & pool hygiene', 'Outdoor event spaces', 'Kitchen compliance'],
     solutions:  ['Invisible wire systems', 'Pool deck protection', 'Terrace bird proofing', 'Gel & spike systems'] },
 
-  { num: '05', Icon: Warehouse,      title: 'Warehouses',                 img: p10,
-    desc: 'Heavy-duty bird exclusion for storage and logistics hubs that protects inventory from contamination while meeting hygiene and fire standards.',
-    challenges: ['Product contamination risk', 'Loading dock ingress', 'High ceiling open areas', 'Fire safety compliance'],
-    solutions:  ['Heavy-duty netting systems', 'Loading bay protection', 'Industrial spike arrays', 'Perimeter exclusion'] },
+  // { num: '05', Icon: Warehouse,      title: 'Warehouses',                 img: p10,
+  //   desc: 'Heavy-duty bird exclusion for storage and logistics hubs that protects inventory from contamination while meeting hygiene and fire standards.',
+  //   challenges: ['Product contamination risk', 'Loading dock ingress', 'High ceiling open areas', 'Fire safety compliance'],
+  //   solutions:  ['Heavy-duty netting systems', 'Loading bay protection', 'Industrial spike arrays', 'Perimeter exclusion'] },
 
-  { num: '06', Icon: Factory,        title: 'Factories',                  img: img7,
-    desc: 'Industrial bird proofing that meets food safety, quality audits and regulatory standards across challenging manufacturing environments.',
-    challenges: ['Production line contamination', 'Regulatory & audit compliance', 'Machinery damage', 'Worker safety hazards'],
-    solutions:  ['Food-grade netting systems', 'Industrial exclusion mesh', 'Machinery area guards', 'Complete perimeter control'] },
+  // { num: '06', Icon: Factory,        title: 'Factories',                  img: img7,
+  //   desc: 'Industrial bird proofing that meets food safety, quality audits and regulatory standards across challenging manufacturing environments.',
+  //   challenges: ['Production line contamination', 'Regulatory & audit compliance', 'Machinery damage', 'Worker safety hazards'],
+  //   solutions:  ['Food-grade netting systems', 'Industrial exclusion mesh', 'Machinery area guards', 'Complete perimeter control'] },
 
-  { num: '07', Icon: Activity,       title: 'Hospitals',                  img: img8,
-    desc: 'Medical-grade bird exclusion across HVAC units, rooftops, critical care wings and patient areas — fully compliant with healthcare hygiene standards.',
-    challenges: ['Infection control requirements', 'HVAC system protection', 'Patient area hygiene', 'Regulatory compliance'],
-    solutions:  ['Complete exclusion netting', 'HVAC unit protection', 'Rooftop bird proofing', 'Full perimeter control'] },
+  // { num: '07', Icon: Activity,       title: 'Hospitals',                  img: img8,
+  //   desc: 'Medical-grade bird exclusion across HVAC units, rooftops, critical care wings and patient areas — fully compliant with healthcare hygiene standards.',
+  //   challenges: ['Infection control requirements', 'HVAC system protection', 'Patient area hygiene', 'Regulatory compliance'],
+  //   solutions:  ['Complete exclusion netting', 'HVAC unit protection', 'Rooftop bird proofing', 'Full perimeter control'] },
 
-  { num: '08', Icon: Waves,          title: 'Swimming Pools',             img: p18,
+  { num: '05', Icon: Waves,          title: 'Swimming Pools',             img: p18,
     desc: 'Aesthetic near-invisible systems that keep pool decks hygienic and bird-free without compromising the luxury feel of premium spaces.',
     challenges: ['Pool water contamination', 'Bird droppings on deck', 'Health concerns', 'Visual appeal'],
     solutions:  ['Near-invisible wire systems', 'Pool perimeter deterrents', 'Corrosion-resistant hardware', 'Custom pool geometry fit'] },
 
-  { num: '09', Icon: GraduationCap,  title: 'Educational Institutions',   img: p20,
-    desc: 'Safe, eco-friendly bird control for schools, colleges and universities — protecting students, canteens and campus infrastructure at scale.',
-    challenges: ['Student health & safety', 'Open campus areas', 'Canteen hygiene', 'Heritage building protection'],
-    solutions:  ['Campus-wide netting systems', 'Canteen area proofing', 'Corridor deterrents', 'Eco-friendly methods'] },
+  // { num: '09', Icon: GraduationCap,  title: 'Educational Institutions',   img: p20,
+  //   desc: 'Safe, eco-friendly bird control for schools, colleges and universities — protecting students, canteens and campus infrastructure at scale.',
+  //   challenges: ['Student health & safety', 'Open campus areas', 'Canteen hygiene', 'Heritage building protection'],
+  //   solutions:  ['Campus-wide netting systems', 'Canteen area proofing', 'Corridor deterrents', 'Eco-friendly methods'] },
 
-  { num: '10', Icon: Shield,         title: 'Public Sector Undertakings', img: p28,
-    desc: 'Reliable bird control for government offices and PSU facilities — meeting public hygiene compliance and infrastructure protection standards.',
-    challenges: ['Public hygiene compliance', 'Large infrastructure coverage', 'Heritage building care', 'Budget & audit requirements'],
-    solutions:  ['Large-area netting systems', 'Wire deterrent installations', 'Spike systems for facades', 'Long-term maintenance plans'] },
+  // { num: '10', Icon: Shield,         title: 'Public Sector Undertakings', img: p28,
+  //   desc: 'Reliable bird control for government offices and PSU facilities — meeting public hygiene compliance and infrastructure protection standards.',
+  //   challenges: ['Public hygiene compliance', 'Large infrastructure coverage', 'Heritage building care', 'Budget & audit requirements'],
+  //   solutions:  ['Large-area netting systems', 'Wire deterrent installations', 'Spike systems for facades', 'Long-term maintenance plans'] },
 
-  { num: '11', Icon: Navigation,     title: 'Airports',                   img: p30,
+  { num: '6', Icon: Navigation,     title: 'Airports',                   img: p30,
     desc: 'Specialized bird hazard management for terminals, hangars and airport infrastructure — ensuring aviation safety and operational compliance.',
     challenges: ['Aviation safety compliance', 'Terminal facade protection', 'Hangar & tarmac coverage', 'Large open span areas'],
     solutions:  ['Hangar exclusion netting', 'Terminal facade proofing', 'Shock track systems', 'Spike & wire deterrents'] },
@@ -205,7 +205,7 @@ export default function Industries() {
       {/* ── BANNER ── */}
       <section className="relative h-[480px] bg-[#0d1b2a] overflow-hidden flex items-end">
         <img src={banner} alt="Industries" className="absolute inset-0 w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #0d1b2a 10%, rgba(13,27,42,0.55) 30%)' }} />
+        <div className="absolute inset-0" />
 
         {/* Decorative vertical gold line */}
         <div className="absolute left-10 xl:left-20 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-yellow-600/40 to-transparent" />
@@ -296,12 +296,12 @@ export default function Industries() {
             ))}
 
             {/* "And More" card */}
-            <Animate dir="right" delay={160}>
+            {/* <Animate dir="right" delay={160}>
               <div
                 className="relative overflow-hidden group flex flex-col items-center justify-center text-center p-10 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-400"
                 style={{ height: '420px', background: 'linear-gradient(135deg, #0d1b2a 0%, #142236 100%)' }}
               >
-                {/* Corner decorations */}
+               
                 <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-yellow-600/50 group-hover:border-yellow-500 transition-colors" />
                 <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-yellow-600/50 group-hover:border-yellow-500 transition-colors" />
                 <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-yellow-600/50 group-hover:border-yellow-500 transition-colors" />
@@ -323,8 +323,55 @@ export default function Industries() {
                   Enquire Now <ArrowRight size={13} />
                 </Link>
               </div>
-            </Animate>
+            </Animate> */}
           </div>
+        </div>
+      </section>
+
+      {/* ── YOUTUBE VIDEOS ── */}
+      <section className="py-20 bg-white">
+        <div className="w-full px-10 xl:px-20">
+          <Animate dir="up" className="text-center mb-12">
+            <p className="text-yellow-600 text-xs font-semibold tracking-[5px] uppercase mb-3">Watch Our Work</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">See Bird Control in Action</h2>
+            <div className="flex justify-center gap-1 mt-4">
+              <span className="w-8 h-0.5 bg-yellow-600" />
+              <span className="w-2 h-0.5 bg-yellow-400" />
+              <span className="w-2 h-0.5 bg-yellow-300" />
+            </div>
+          </Animate>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            {[
+              'https://www.youtube.com/embed?listType=user_uploads&list=GoldkraftBirdControl&index=0',
+              'https://www.youtube.com/embed?listType=user_uploads&list=GoldkraftBirdControl&index=1',
+              'https://www.youtube.com/embed?listType=user_uploads&list=GoldkraftBirdControl&index=2',
+            ].map((src, i) => (
+              <Animate key={i} dir={['left','up','right'][i]} delay={i * 80}>
+                <div className="relative w-full overflow-hidden shadow-lg border border-gray-100" style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    src={src}
+                    title={`Goldkraft Bird Control Video ${i + 1}`}
+                    className="absolute inset-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </Animate>
+            ))}
+          </div>
+
+          <Animate dir="up" delay={100} className="text-center">
+            <a
+              href="https://www.youtube.com/@GoldkraftBirdControl/videos"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 uppercase text-sm tracking-widest transition-all duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+              View All Videos on YouTube
+            </a>
+          </Animate>
         </div>
       </section>
 

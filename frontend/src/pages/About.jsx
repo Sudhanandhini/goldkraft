@@ -103,7 +103,7 @@ export default function About() {
       {/* ── BANNER ── */}
       <section className="relative h-[480px] bg-[#0d1b2a] overflow-hidden flex items-end">
         <img src={img3} alt="About" className="absolute inset-0 w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #0d1b2a 10%, rgba(13,27,42,0.5) 30%)' }} />
+        <div className="absolute inset-0"  />
         <div className="absolute left-10 xl:left-20 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-yellow-600/40 to-transparent" />
         <div className="relative w-full px-10 xl:px-20 pb-16">
           <Animate dir="left" delay={0}>

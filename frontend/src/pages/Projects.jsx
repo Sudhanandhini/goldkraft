@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
@@ -36,8 +36,6 @@ import p32 from '../assets/32.jpg'
 
 
 const partnerLogos = [partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9];
-
-const categories = ['All', 'Residential', 'Commercial', 'Industrial', 'Hospitality'];
 
 const projects = [
   { num:'01', cat:'Residential',  title:'Luxury Villa – Whitefield, Bengaluru',   type:'Bird Wire System',          img:img1,  desc:'Low-visibility bird wire solution preserving facade aesthetics while eliminating pigeon nesting on all balconies and rooftop edges.' },
@@ -131,11 +129,6 @@ const ProjectCard = ({ p, i }) => {
         <span className="text-white font-bold text-sm">{p.num}</span>
       </div>
 
-      {/* Category badge */}
-      <div className="absolute top-0 right-0 bg-[#0d1b2a]/85 px-3 py-2 z-10">
-        <span className="text-yellow-400 text-[10px] font-bold tracking-[2px] uppercase">{p.cat}</span>
-      </div>
-
       {/* Default bottom content — fades out on hover */}
       <div className="absolute bottom-0 left-0 right-0 p-5 z-10 group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-300">
         <div className="text-yellow-400 text-[10px] font-bold tracking-[2px] uppercase mb-1">{p.type}</div>
@@ -164,20 +157,13 @@ const ProjectCard = ({ p, i }) => {
 };
 
 export default function Projects() {
-  const [active, setActive]     = useState('All');
-  const [filterKey, setFilterKey] = useState(0);
-
-  const filtered = active === 'All' ? projects : projects.filter(p => p.cat === active);
-
-  const handleFilter = (cat) => { setActive(cat); setFilterKey(k => k + 1); };
-
   return (
     <div className="overflow-x-hidden">
 
       {/* ── BANNER ── */}
       <section className="relative h-[480px] bg-[#0d1b2a] overflow-hidden flex items-end">
         <img src={img2} alt="Projects" className="absolute inset-0 w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #0d1b2a 10%, rgba(13,27,42,0.5) 30%)' }} />
+        <div className="absolute inset-0"  />
         <div className="absolute left-10 xl:left-20 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-yellow-600/40 to-transparent" />
         <div className="relative w-full px-10 xl:px-20 pb-16">
           <Animate dir="left" delay={0}>
@@ -227,33 +213,12 @@ export default function Projects() {
             </div>
           </Animate>
 
-          {/* Filter tabs */}
-          <Animate dir="up" delay={80} className="flex flex-wrap gap-2 justify-center mb-12">
-            {categories.map(c => (
-              <button key={c} onClick={() => handleFilter(c)}
-                className={`px-7 py-2.5 text-xs font-bold uppercase tracking-[2px] border transition-all duration-300 ${
-                  active === c
-                    ? 'bg-[#0d1b2a] border-[#0d1b2a] text-white'
-                    : 'bg-white border-gray-200 text-gray-600 hover:border-yellow-500 hover:text-yellow-600'
-                }`}>
-                {c}
-              </button>
-            ))}
-          </Animate>
-
           {/* Project grid */}
-          <div key={filterKey} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
-            {filtered.map((p, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+            {projects.map((p, i) => (
               <ProjectCard key={p.num} p={p} i={i} />
             ))}
           </div>
-
-          <Animate dir="up" delay={100} className="text-center mt-12">
-            <p className="text-gray-500 text-sm">
-              Showing <span className="text-yellow-600 font-semibold">{filtered.length}</span> of{' '}
-              <span className="text-yellow-600 font-semibold">{projects.length}</span> projects
-            </p>
-          </Animate>
         </div>
       </section>
 
@@ -299,6 +264,102 @@ export default function Projects() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── CLIENT NAME LIST ── */}
+      <section className="py-20 bg-gray-50 border-t border-gray-100">
+        <div className="w-full px-10 xl:px-20">
+          <Animate dir="up" className="text-center mb-12">
+            <p className="text-yellow-600 text-xs font-semibold tracking-[4px] uppercase mb-3">Our Clientele</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Clients Who Trust Us</h2>
+            <div className="flex justify-center gap-1">
+              <span className="w-8 h-0.5 bg-yellow-600" /><span className="w-2 h-0.5 bg-yellow-400" /><span className="w-2 h-0.5 bg-yellow-300" />
+            </div>
+          </Animate>
+
+          <Animate dir="up" delay={80}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-gray-200">
+              {[
+                'Airport Authority Of India Mysuru Airport',
+                'Ace Realty Ventures',
+                'Acquity Labs Pvt Ltd',
+                'Akshaya Motors (A Unit of Advaith Motors)',
+                'AMA Capital Advisors Private Limited',
+                'Anika Developers',
+                'Apollo Hospitals Enterprise Ltd',
+                'Appro Lubes Private Limited',
+                'Asian Health Meter',
+                'Aureya FM Services Private Limited',
+                'Bangalore Turf Club Limited',
+                'Beckman Coulter India Private Limited',
+                'BEL Education Institutions',
+                'Bellona Hospitality Services Limited',
+                'Bizzhub Ventures Private Limited',
+                'Blue Dart Aviation Limited',
+                'Brigade Hotel Ventures Limited',
+                'Brilliant Printers Private Limited',
+                "Bruno's Indo Continental Cafe",
+                'Chalet Hotels Limited',
+                'Chulhachauki Da Dhaba Private Limited',
+                'Cisww Engineering India Private Limited',
+                'Devi Super Speciality Eye Hospital Private Limited',
+                'Difacto Robotics & Automation Pvt Ltd',
+                'Director General And Inspector General Of Police',
+                'Drip N Dry',
+                'Elixir Enterprises And Hotels Pvt Ltd',
+                'Embassy Developments Limited',
+                'Embassy Lake Terraces Apartment Owners Association',
+                'Embassy Grove Owners Association',
+                'Embassy Office Parks REIT (MPPL/VTPL/SIPL/ECPL)',
+                'Falcon Property Management Services',
+                'Frontfoot Sports Management Private Limited',
+                'G M Infinite Dwelling India Pvt Ltd',
+                'Global Calcium Private Limited',
+                'Hikoki Power Tools India Private Limited',
+                'Himatsingka Seide Limited',
+                'Hindustan Aeronautics Limited',
+                'J K Fenner India Limited',
+                'JMC Projects (India) Limited',
+                'John Distilleries Private Limited',
+                "Karaumbiah's Academy for Leaning & Sports",
+                'Karle Tech Park Private Limited',
+                'Kempegowda Institute of Medical Sciences',
+                'Kosan Crisplant India Private Limited',
+                'Kumar Organic Products Ltd',
+                'Lulu International Shopping Malls Private Limited',
+                'Marble Centre International Private Ltd',
+                'Metro Cash And Carry India Private Limited',
+                'Millenia Realtors Private Limited',
+                'Motherson Electronic Components Private Limited',
+                'Mpp Technologies Private Limited',
+                'Nalapad Hotels Pvt Ltd',
+                'NDR Auto Components LTD',
+                'Nitesh Residency Hotels Private Limited',
+                'Pai Viceroy (A Unit Of Pai Vaibhav Hotels India Pvt Ltd)',
+                'Pashmina Waterfront Owners Association',
+                'Phoenix Kessaku',
+                'Royal Orchid Hotels Limited',
+                'Salcomp Manufacturing India Pvt. Ltd.',
+                'Sartorius Stedim India Pvt. Ltd.',
+                'Sri Devaraj Urs Academy of Higher Education & Research',
+                'Tata Advanced Systems Limited',
+                'Tata Electronics Systems Solutions Private Limited',
+                'The Director, CSIR National Aerospace Laboratories',
+                'Titan Company Limited',
+                'Ultratech Cement Limited',
+                'Vista Spaces EPC Pvt Ltd',
+                'VRL Automation Engineering & Projects Private Limited',
+                'Werner Finley Private Limited',
+                'Wistron Infocomm Manufacturing (India) Pvt Ltd',
+              ].map((name, i) => (
+                <div key={i} className="bg-white px-5 py-4 flex items-center gap-3 group hover:bg-yellow-50 transition-colors duration-200">
+                  <span className="w-1.5 h-1.5 bg-yellow-500 shrink-0 group-hover:bg-yellow-600 transition-colors" />
+                  <span className="text-gray-700 text-sm font-medium group-hover:text-gray-900 transition-colors leading-snug">{name}</span>
+                </div>
+              ))}
+            </div>
+          </Animate>
         </div>
       </section>
 
