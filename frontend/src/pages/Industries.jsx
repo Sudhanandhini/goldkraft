@@ -343,17 +343,19 @@ export default function Industries() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
-              'https://www.youtube.com/embed?listType=user_uploads&list=GoldkraftBirdControl&index=0',
-              'https://www.youtube.com/embed?listType=user_uploads&list=GoldkraftBirdControl&index=1',
-              'https://www.youtube.com/embed?listType=user_uploads&list=GoldkraftBirdControl&index=2',
+              'https://www.youtube.com/embed/OXjLApaT-lk?si=bCMgGyXK9GzJcGZz',
+              'https://www.youtube.com/embed/xA9GYMtSVL4?si=yGnqJ8O4mfHBebGD',
+              'https://www.youtube.com/embed/fjWz5pC24SA?si=uwmGu9_IeyYXuM6a',
             ].map((src, i) => (
-              <Animate key={i} dir={['left','up','right'][i]} delay={i * 80}>
+              <Animate key={i} dir={['left', 'up', 'right'][i]} delay={i * 80}>
                 <div className="relative w-full overflow-hidden shadow-lg border border-gray-100" style={{ paddingBottom: '56.25%' }}>
                   <iframe
                     src={src}
                     title={`Goldkraft Bird Control Video ${i + 1}`}
                     className="absolute inset-0 w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
                   />
                 </div>

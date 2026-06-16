@@ -152,7 +152,7 @@ export default function About() {
             <Animate dir="right" delay={100}>
               <p className="text-yellow-600 text-xs font-semibold tracking-[4px] uppercase mb-3">Our Story</p>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                Professional Bird<br/>Proofing Solutions
+                Professional Eco-Friendly Bird Proofing Solutions
               </h2>
               <div className="flex gap-1 mb-6">
                 <span className="w-10 h-0.5 bg-yellow-600" /><span className="w-3 h-0.5 bg-yellow-400" /><span className="w-2 h-0.5 bg-yellow-300" />

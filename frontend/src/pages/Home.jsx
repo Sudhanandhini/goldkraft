@@ -32,12 +32,7 @@ import banner3 from '../assets/banner4.png';
 const partnerLogos = [partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9];
 
 const heroSlides = [
-  {
-    bg: banner1,
-    tag: 'ECO-FRIENDLY',
-    title: 'Bird Control Services & Solutions',
-    sub: 'Professional pigeon control systems for apartments, commercial buildings, balconies, swimming pools & industrial spaces.',
-  },
+
   {
     bg: banner3,
     tag: 'ECO-FRIENDLY',
