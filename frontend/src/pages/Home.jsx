@@ -111,7 +111,7 @@ const projects = [
 
 const recentProjects = [
   { title: 'Bird Wire System',              sub: 'Premium Residential',    city: 'Bangalore', img: img2 },
-  { title: 'Invisible Grid',                sub: 'Residential Apartment',  city: 'Bangalore', img: img5 },
+  { title: 'Invisible Grills',                sub: 'Residential Apartment',  city: 'Bangalore', img: img5 },
   { title: 'High-Rise Installation',        sub: 'Commercial Building',    city: 'Bangalore', img: img3 },
   { title: <>Swimming Pool<br/>Bird Wire System</>, sub: 'Luxury Property, Bangalore', city: '', img: img7 },
   { title: 'Commercial Project',            sub: 'Office Building',        city: 'Bangalore', img: img71 },
@@ -124,7 +124,7 @@ const ourServices = [
   { Icon: Grid3x3,  title: <>Bird<br/>Net Installation</>,     img: img3, desc: 'Protection for balconies, windows, ducts and open areas.' },
   { Icon: GitMerge, title: <>Bird<br/>Wire Systems</>,         img: img2, desc: 'Discreet stainless steel bird deterrent systems for premium properties and ledges.' },
   { Icon: Zap,      title: <>Bird<br/>Spikes</>,               img: img6, desc: 'Effective anti-roosting solutions for ledges, beams and utility areas.' },
-  { Icon: Building2,title: <>Invisible<br/>Grid</>,   img: img5, desc: 'Customized solutions for residential apartments and villas.' },
+  { Icon: Building2,title: <>Invisible<br/>Grills </>,   img: img5, desc: 'Customized solutions for residential apartments and villas.' },
   { Icon: Waves,    title: <>Swimming Pool<br/>Bird Control</>, img: img7, desc: 'Aesthetic bird proofing systems for pool ledges and luxury spaces.' },
   { Icon: Factory,  title: <>Commercial Bird<br/>Proofing</>,  img: img4, desc: 'Solutions for factories, warehouses and commercial facilities.' },
 ];

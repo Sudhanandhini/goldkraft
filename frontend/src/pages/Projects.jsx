@@ -38,12 +38,54 @@ import p32 from '../assets/32.jpg'
 const partnerLogos = [partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9];
 
 const projects = [
-  { num:'01', cat:'Residential',  title:'Bird Wire System installed at Kingfisher Towers, Bengaluru',   type:'Bird Wire System',          img:img1,  desc:'Low-visibility bird wire solution preserving facade aesthetics while eliminating pigeon nesting on all balconies and rooftop edges.' },
-  { num:'02', cat:'Commercial',   title:'Anti Bird Spikes at Embassy Lake Terraces, Hebbal, Bengaluru',             type:'Anti Bird Netting',          img:img2,  desc:'Custom bird proofing for high-rise facade protection with minimal visual impact. Full floor coverage netting installation.' },
-  { num:'03', cat:'Industrial',   title:'Bird Control Services work in progress at The Leela Palace, Old Airport Road, Bengaluru',              type:'Industrial Netting',         img:img3,  desc:'Industrial bird control system for hygiene compliance and operational safety across 50,000 sq.ft warehouse facility.' },
-  { num:'04', cat:'Hospitality',  title:'Anti Bird Control Netting installed for a villa in Bangalore',           type:'Bird Wire System',           img:img4,  desc:'Discrete bird wire installation to protect the iconic hotel facade while maintaining the heritage architectural aesthetics.' },
-  { num:'05', cat:'Residential',  title:'Anti-bird gel application',            type:'Balcony Netting',            img:img5,  desc:'Complete balcony bird proofing for 250+ apartments in a luxury residential complex using UV-stabilised transparent nets.' },
-   { num:'06', cat:'Commercial',   title:'Beckmen Coulter Life Sciences',         type:'industrial anti bird netting',         img:img6,  desc:'Industrial anti-bird netting is a durable and effective bird control solution designed to protect warehouses, factories, commercial buildings, and industrial spaces from pigeon intrusion. It helps maintain hygiene, prevents bird-related damage, and ensures safer and cleaner working environments.' },
+  {
+  num:'01',
+  cat:'Residential',
+  title:'Bird Wire System installed at Kingfisher Towers, Bengaluru',
+  type:'Bird Wire System',
+  img:img1,
+  desc:'Installed a premium bird wire system at Kingfisher Towers to prevent pigeon perching and nesting while preserving the building’s elegant architectural appearance.'
+},
+{
+  num:'02',
+  cat:'Commercial',
+  title:'Anti Bird Spikes at Embassy Lake Terraces, Hebbal, Bengaluru',
+  type:'Anti Bird spikes',
+  img:img2,
+  desc:'Strategically installed anti-bird spikes across ledges and facade areas to deter bird activity and maintain a clean, bird-free commercial environment.'
+},
+{
+  num:'03',
+  cat:'Industrial',
+  title:'Bird Control Services work in progress at Jigani',
+  type:'Industrial',
+  img:img3,
+  desc:'Comprehensive bird control solutions underway at an industrial facility in Jigani, ensuring improved hygiene, operational safety, and long-term bird prevention.'
+},
+{
+  num:'04',
+  cat:'Hospitality',
+  title:'Anti Bird Control Netting installed for a Leela Palace in Bangalore',
+  type:'Anti Bird Netting',
+  img:img4,
+  desc:'Installed high-quality anti-bird netting at The Leela Palace to protect guest areas and building exteriors from bird intrusion without affecting aesthetics.'
+},
+{
+  num:'05',
+  cat:'Residential',
+  title:'Anti-bird gel application in Metro station in Bengaluru',
+  type:'Bird Repellent Gel',
+  img:img5,
+  desc:'Applied bird repellent gel at a Bengaluru Metro station to effectively discourage bird roosting and maintain a clean, safe public environment.'
+},
+{
+  num:'06',
+  cat:'Commercial',
+  title:'Beckman Coulter Life Sciences',
+  type:'Invisible Grills',
+  img:img6,
+  desc:'Installed durable invisible grills at Beckman Coulter Life Sciences, enhancing safety and security while maintaining unobstructed views and modern aesthetics.'
+},
   // { num:'07', cat:'Industrial',   title:'Solar Farm – Tumkur',                      type:'Solar Panel Protection',     img:img7,  desc:'Specialised bird mesh installation protecting 2MW solar panel array from bird nesting, increasing panel efficiency.' },
   // { num:'08', cat:'Hospitality',  title:'Columbia Asia Hospital – Bengaluru',       type:'Complete Bird Exclusion',    img:img8,  desc:'Medical-grade bird exclusion system across HVAC units, rooftop, and critical areas meeting hospital hygiene standards.' },
   // { num:'09', cat:'Commercial',   title:'Prestige Exora – ITPL Tech Park',          type:'Bird Spike System',          img:p5,    desc:'Comprehensive anti-bird spike installation across parking areas, parapet walls and canopy edges of tech campus.' },

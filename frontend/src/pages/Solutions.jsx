@@ -58,7 +58,7 @@ const products = [
   {
     num: '04',
     Icon: Building2,
-    title: 'Balcony Bird Protection',
+    title: 'Invisible Grills',
     tag: 'Residential Specialist',
     img: n4,
     img2: s4,
@@ -80,7 +80,7 @@ const products = [
   {
     num: '06',
     Icon: Factory,
-    title: 'Industrial Bird Proofing',
+    title: 'Commercial Bird Proofing',
     tag: 'Large-Scale Solutions',
     img: n6,
     img2: s5,
