@@ -47,7 +47,7 @@ export default function Navbar() {
             </span> */}
           </div>
           <div className="flex items-center gap-3">
-            <span className="text- text-xs">Bengaluru | Commercial & Residential Bird Control</span>
+            <span className="text- text-xs">Bengaluru | Commercial, Industrial & Residential Bird Control</span>
 
           </div>
         </div>

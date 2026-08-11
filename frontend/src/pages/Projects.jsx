@@ -65,7 +65,7 @@ const projects = [
 {
   num:'04',
   cat:'Hospitality',
-  title:'Anti Bird Control Netting installed for a Leela Palace in Bangalore',
+  title:'Anti Bird Control Netting being installed at Leela Palace in Bangalore',
   type:'Anti Bird Netting',
   img:img4,
   desc:'Installed high-quality anti-bird netting at The Leela Palace to protect guest areas and building exteriors from bird intrusion without affecting aesthetics.'
@@ -81,10 +81,10 @@ const projects = [
 {
   num:'06',
   cat:'Commercial',
-  title:'Beckman Coulter Life Sciences',
-  type:'Invisible Grills',
+  title:'',
+  type:'Commercial anti-bird netting ',
   img:img6,
-  desc:'Installed durable invisible grills at Beckman Coulter Life Sciences, enhancing safety and security while maintaining unobstructed views and modern aesthetics.'
+  desc:''
 },
   // { num:'07', cat:'Industrial',   title:'Solar Farm – Tumkur',                      type:'Solar Panel Protection',     img:img7,  desc:'Specialised bird mesh installation protecting 2MW solar panel array from bird nesting, increasing panel efficiency.' },
   // { num:'08', cat:'Hospitality',  title:'Columbia Asia Hospital – Bengaluru',       type:'Complete Bird Exclusion',    img:img8,  desc:'Medical-grade bird exclusion system across HVAC units, rooftop, and critical areas meeting hospital hygiene standards.' },

@@ -36,7 +36,7 @@ const contactInfo = [
   {
     Icon: Phone, label: 'Phone / WhatsApp',
     lines: [
-      <a key="1" href="tel:9449065735"  className="hover:text-yellow-400 transition-colors">94490 65735</a>,
+      <a key="1" href="tel:9449065735"  className="hover:text-yellow-400 transition-colors">+91 94490 65735</a>,
       <a key="2" href="tel:08042126797" className="hover:text-yellow-400 transition-colors">080-4212 6797</a>,
     ],
   },
@@ -49,7 +49,7 @@ const contactInfo = [
   {
     Icon: MapPin, label: 'Our Office',
     lines: [
-      <span key="1">No. 18, 6th Main, 4th Cross,Gandhi Nagar, Bangalore - 560 009</span>,
+      <span key="1">No. 18, 6th Main, 4th Cross, Gandhi Nagar, Bangalore - 560 009</span>,
     ],
   },
   // {
@@ -158,10 +158,15 @@ export default function Contact() {
               <Animate dir="up" delay={460} className="flex-1 min-h-[200px] overflow-hidden border border-white/10">
                 <iframe
                   title="Goldkraft Location"
-                  src="https://maps.google.com/maps?q=Peenya+Industrial+Area+Bengaluru&output=embed"
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4627.010656057966!2d77.57405497578961!3d12.977996687337939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1731fcb95f11%3A0x8c7d01fe829b05dd!2sGoldkraft%20Enterprises!5e1!3m2!1sen!2sus!4v1786440244410!5m2!1sen!2sus"
                   className="w-full h-full min-h-[200px] border-0 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
                   loading="lazy"
                 />
+
+
+                {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4627.010656057966!2d77.57405497578961!3d12.977996687337939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1731fcb95f11%3A0x8c7d01fe829b05dd!2sGoldkraft%20Enterprises!5e1!3m2!1sen!2sus!4v1786440244410!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin"></iframe> */}
               </Animate>
             </div>
           </Animate>
@@ -268,7 +273,7 @@ export default function Contact() {
             {[
               { icon: '📞', title: 'Call Us Now',         val: '+91 94490 65735',         sub: 'Mon–Sat, 9AM–7PM' },
               { icon: '✉️', title: 'Email Us',            val: 'sales@goldkraft.in',      sub: 'Reply within 24 hours' },
-              { icon: '📍', title: 'Visit Our Office',    val: 'Peenya, Bengaluru',       sub: 'No. 18, 6th Main, 4th Cross,Gandhi Nagar, Bangalore - 560 009' },
+              { icon: '📍', title: 'Visit Our Office',    val: 'Bengaluru',       sub: 'No. 18, 6th Main, 4th Cross, Gandhi Nagar, Bangalore - 560 009' },
             ].map((item, i) => (
               <Animate key={i} dir="up" delay={i * 80} className="py-8 px-8 flex items-center gap-4">
                 <span className="text-3xl">{item.icon}</span>

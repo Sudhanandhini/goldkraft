@@ -86,7 +86,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={15} className="text-yellow-600 mt-0.5 shrink-0"/>
                 <div>
-                  <a href="tel:9449065735" className="text-gray-400 hover:text-yellow-500 transition-colors block">94490 65735</a>
+                  <a href="tel:9449065735" className="text-gray-400 hover:text-yellow-500 transition-colors block">+91 94490 65735</a>
                   <a href="tel:08042126797" className="text-gray-400 hover:text-yellow-500 transition-colors block">080-42126797</a>
                 </div>
               </li>
@@ -96,7 +96,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={15} className="text-yellow-600 mt-0.5 shrink-0"/>
-                <span className="text-gray-400">No. 18, 6th Main, 4th Cross,Gandhi Nagar, Bangalore - 560 009</span>
+                <span className="text-gray-400">No. 18, 6th Main, 4th Cross, Gandhi Nagar, Bangalore - 560 009</span>
               </li>
             </ul>
           </div>
