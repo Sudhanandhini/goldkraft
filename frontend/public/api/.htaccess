@@ -1,0 +1,6 @@
+# Block direct access to secrets and dependencies
+<FilesMatch "^(\.env.*|composer\.(json|lock))$">
+    Require all denied
+</FilesMatch>
+
+RedirectMatch 403 ^/api/vendor/.*$

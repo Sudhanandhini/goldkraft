@@ -20,7 +20,7 @@ import TermsConditions from './pages/TermsConditions';
 
 export default function App() {
   return (
-    <BrowserRouter basename="/goldkraft">
+    <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <ScrollToTopOnNav />
         <Navbar />

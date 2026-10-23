@@ -67,7 +67,27 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', phone: '', property: '', message: '' });
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
-  const handleSubmit = e => { e.preventDefault(); setSubmitted(true); };
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
+  const handleSubmit = async e => {
+    e.preventDefault();
+    setSending(true);
+    setError('');
+    try {
+      const res = await fetch('/api/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || 'Failed to send enquiry. Please try again.');
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message || 'Failed to send enquiry. Please try again.');
+    } finally {
+      setSending(false);
+    }
+  };
 
   return (
     <div className="overflow-x-hidden">
@@ -249,9 +269,12 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <button type="submit"
-                      className="w-full bg-[#0d1b2a] hover:bg-yellow-600 text-white font-bold py-4 uppercase text-sm tracking-[3px] transition-all duration-300 flex items-center justify-center gap-3 group/sub">
-                      Submit Enquiry
+                    {error && (
+                      <p className="text-sm text-red-600 bg-red-50 border border-red-200 px-4 py-3 mb-4">{error}</p>
+                    )}
+                    <button type="submit" disabled={sending}
+                      className="w-full bg-[#0d1b2a] hover:bg-yellow-600 disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold py-4 uppercase text-sm tracking-[3px] transition-all duration-300 flex items-center justify-center gap-3 group/sub">
+                      {sending ? 'Sending...' : 'Submit Enquiry'}
                       <ArrowRight size={16} className="group-hover/sub:translate-x-1 transition-transform" />
                     </button>
                     <p className="text-[11px] text-gray-400 text-center mt-3 tracking-wide">
